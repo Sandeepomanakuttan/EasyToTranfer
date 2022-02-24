@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WifiActivity">
+
+
+
+    <TextView
+        android:id="@+id/connectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="txt"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDiscover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDiscover"
+        app:layout_constraintTop_toTopOf="@+id/btnDiscover" />
+
+    <Button
+        android:id="@+id/btnDiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnonoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/connectionStatus"
+        app:layout_constraintStart_toEndOf="@+id/btnDiscover"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="406dp"
+        android:layout_height="257dp"
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDiscover" />
+
+    <RelativeLayout
+        android:layout_width="416dp"
+        android:layout_height="431dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list">
+
+        <TextView
+            android:id="@+id/readbox"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:text="Select"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/readbox"
+            android:orientation="horizontal"
+            android:layout_marginTop="270dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/writeMsg"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edt"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_below="@+id/readbox" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/btnstyle"
+                android:src="@drawable/ic_baseline_send_24"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <!--    <ScrollView-->
+    <!--        android:id="@+id/scrollView2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="420dp"-->
+    <!--        android:background="@color/purple_500"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btnDiscover"-->
+    <!--        app:layout_constraintVertical_bias="0.295">-->
+
+    <!--        -->
+    <!--    </ScrollView>-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App_Sharing</string>
+    <string name="app_size_b">%1$.2f B</string>
+    <string name="app_size_kib">%1$.2f KB</string>
+    <string name="app_size_mib">%1$.2f MB</string>
+    <string name="app_size_gib">%1$.2f GB</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
